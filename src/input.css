@@ -1,0 +1,9 @@
+@font-face {
+    font-family: sidger;
+    src: url("../src/fonts/sidger/Sidger.ttf");
+}
+
+@import "tailwindcss";
+@theme {
+    --font-sidger: Sidger, "sans-serif";
+}

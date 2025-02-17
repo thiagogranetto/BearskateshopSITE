@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bear Skateshop</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="./imagens/bearlogo.jpg">
+    <!-- Incluindo o Tailwind CSS -->
+    <link href="./output.css" rel="stylesheet">
+    <!-- Incluindo o Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body class="bg-amber-500">
+    <!-- Header: Cabeçalho da página -->
+    <header class="bg-white shadow md:px-20">
+        <div class="container mx-auto px-2 py-0">
+            <!-- Flex container para alinhar logo, menu e ícones -->
+            <div class="flex items-center justify-between">
+                <!-- Logo da loja -->
+                <div>
+                    <img src="./imagens/bearlogo.jpg" alt="Bear Skateshop" class="w-20">
+                </div>
+                <!-- Menu de navegação para telas maiores -->
+                <nav class="hidden md:flex space-x-10 font-sidger text-3xl text-end">
+                    <!-- Item do menu com dropdown -->
+                    <div class="group relative">
+                        <!-- Link principal do menu -->
+                        <a href="#" class="text-black hover:text-gray-600">Skateboarding</a>
+                        <!-- Dropdown que aparece ao passar o mouse -->
+                        <div class="absolute hidden group-hover:block bg-gray-200 shadow-lg rounded-lg  py-2 w-25 z-50">
+                            <a href="#" class="block px-2 py-2 text-left text-black hover:bg-gray-100">Decks</a>
+                            <a href="#" class="block px-2 py-2 text-left text-black hover:bg-gray-100">Trucks</a>
+                            <a href="#" class="block px-2 py-2 text-left text-black hover:bg-gray-100">Wheels</a>
+                        </div>
+                    </div>
+                    <!-- Outro item do menu com dropdown -->
+                    <div class="group relative">
+                        <a href="#" class="text-black hover:text-gray-600">Roupas</a>
+                        <div class="absolute hidden group-hover:block bg-gray-200  shadow-lg rounded-lg py-2 w-25 z-50">
+                            <a href="#" class="block px-2 py-2 text-left text-black hover:bg-gray-100">Camisetas</a>
+                            <a href="#" class="block px-2 py-2 text-left text-black hover:bg-gray-100">Casacos</a>
+                            <a href="#" class="block px-2 py-2 text-left text-black hover:bg-gray-100">Calcas</a>
+                        </div>
+                    </div>
+                    <!-- Mais um item do menu com dropdown -->
+                    <div class="group relative">
+                        <a href="#" class="text-black hover:text-gray-600">Acessorios</a>
+                        <div class="absolute hidden group-hover:block bg-gray-200  shadow-lg rounded-lg py-2 w-30 z-50">
+                            <a href="#" class="block px-2 py-2 text-black text-left hover:bg-gray-100">Ferramentas</a>
+                            <a href="#" class="block px-2 py-2 text-black text-left hover:bg-gray-100">Moletons</a>
+                            <a href="#" class="block px-2 py-2 text-black text-left hover:bg-gray-100">Bones</a>
+                        </div>
+                    </div>
+                    <!-- Itens do menu sem dropdown -->
+                    <a href="#" class="text-black hover:text-gray-600">Marcas</a>
+                    <a href="#" class="text-black hover:text-gray-600">Promocoes</a>
+                </nav>
+                <!-- Ícones de login e carrinho -->
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-black hover:text-gray-600">Login</a>
+                    <a href="#" class="text-black hover:text-gray-600">Carrinho</a>
+                </div>
+                <!-- Botão do menu hambúrguer para telas menores -->
+                <button id="menu-toggle" class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Menu de navegação para telas menores -->
+            <nav id="mobile-menu" class="hidden md:hidden mt-4">
+                <div class="space-y-2">
+                    <!-- Item do menu com dropdown -->
+                    <div class="group relative">
+                        <!-- Link principal do menu -->
+                        <a href="#" class="block text-gray-800 hover:text-gray-600">Skateboards</a>
+                        <!-- Dropdown que aparece ao passar o mouse -->
+                        <div class="hidden group-hover:block bg-white shadow-lg rounded-lg mt-2 py-2 w-48 z-50">
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Decks</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Trucks</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Wheels</a>
+                        </div>
+                    </div>
+                    <!-- Outro item do menu com dropdown -->
+                    <div class="group relative">
+                        <a href="#" class="block text-gray-800 hover:text-gray-600">Roupas</a>
+                        <div class="hidden group-hover:block bg-white shadow-lg rounded-lg mt-2 py-2 w-48 z-50">
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Camisetas</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Calças</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Casacos</a>
+                        </div>
+                    </div>
+                    <!-- Mais um item do menu com dropdown -->
+                    <div class="group relative">
+                        <a href="#" class="block text-gray-800 hover:text-gray-600">Acessórios</a>
+                        <div class="hidden group-hover:block bg-white shadow-lg rounded-lg mt-2 py-2 w-48 z-50">
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Skate Tools</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Moletons</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Bonés</a>
+                        </div>
+                    </div>
+                    <!-- Itens do menu sem dropdown -->
+                    <a href="#" class="block text-gray-800 hover:text-gray-600">Marcas</a>
+                    <a href="#" class="block text-gray-800 hover:text-gray-600">Promoções</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+<!-- Carrossel de Banners -->
+    <div class="swiper-container my-20 px-12">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <img src="./imagens/banner1.jpg" alt="Banner 1" class="w-full object-cover">
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <img src="./imagens/banner2.jpg" alt="Banner 2" class="w-full object-cover">
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <img src="./imagens/banner3.jpg" alt="Banner 3" class="w-full object-cover">
+            </div>
+        </div>
+        <!-- Botões de navegação -->
+        <div class="swiper-button-next object-center"></div>
+        <div class="swiper-button-prev object-center"></div>
+        <!-- Paginação -->
+        <div class="swiper-pagination object-bottom"></div>
+    </div>
+
+    <!-- Seção de Novidades -->
+    <section class="container mx-auto px-6 py-8">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">Novidades</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- Card de produto 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+                <img src="./imagens/produto1.png" alt="Produto 1" class="w-70 h-48 object-center">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold text-gray-800">Deck de Skate</h2>
+                    <p class="text-gray-600">R$ 200,00</p>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Comprar</button>
+                </div>
+            </div>
+            <!-- Card de produto 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden  transition-transform transform hover:scale-105">
+                <img src="./imagens/produto2.png" alt="Produto 2" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold text-gray-800">Trucks</h2>
+                    <p class="text-gray-600">R$ 150,00</p>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Comprar</button>
+                </div>
+            </div>
+            <!-- Card de produto 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden  transition-transform transform hover:scale-105">
+                <img src="./imagens/produto3.png" alt="Produto 3" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold text-gray-800">Wheels</h2>
+                    <p class="text-gray-600">R$ 100,00</p>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Mais Vendidos -->
+    <section class="container mx-auto px-6 py-8">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">Mais Vendidos</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Card de produto 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden  transition-transform transform hover:scale-105">
+                <img src="./imagens/produto4.png" alt="Produto 1" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold text-gray-800">Deck de Skate</h2>
+                    <p class="text-gray-600">R$ 200,00</p>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Comprar</button>
+                </div>
+            </div>
+            <!-- Card de produto 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden  transition-transform transform hover:scale-105">
+                <img src="./imagens/produto 5.png" alt="Produto 2" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold text-gray-800">Trucks</h2>
+                    <p class="text-gray-600">R$ 150,00</p>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Comprar</button>
+                </div>
+            </div>
+            <!-- Card de produto 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden  transition-transform transform hover:scale-105">
+                <img src="./imagens/produto6.png" alt="Produto 3" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold text-gray-800">Wheels</h2>
+                    <p class="text-gray-600">R$ 100,00</p>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer: Rodapé da página -->
+    <footer class="bg-white shadow mt-8">
+        <div class="container mx-auto px-6 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Sobre a loja -->
+                <div>
+                    <h3 class="text-lg font-bold text-gray-800">Sobre a Bear Skateshop</h3>
+                    <p class="mt-4 text-gray-600">A Bear Skateshop é a sua loja especializada em skates, roupas e acessórios. Oferecemos os melhores produtos para skatistas de todos os níveis.</p>
+                </div>
+                <!-- Links úteis -->
+                <div>
+                    <h3 class="text-lg font-bold text-gray-800">Links Úteis</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Política de Privacidade</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Termos de Serviço</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Trocas e Devoluções</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">FAQ</a></li>
+                    </ul>
+                </div>
+                <!-- Contato -->
+                <div>
+                    <h3 class="text-lg font-bold text-gray-800">Contato</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li class="text-gray-600">Email: contato@bearskateshop.com</li>
+                        <li class="text-gray-600">Telefone: (11) 1234-5678</li>
+                        <li class="text-gray-600">Endereço: Rua do Skate, 123 - São Paulo, SP</li>
+                    </ul>
+                </div>
+                <!-- Newsletter -->
+                <div>
+                    <h3 class="text-lg font-bold text-gray-800">Newsletter</h3>
+                    <p class="mt-4 text-gray-600">Assine nossa newsletter para receber promoções e novidades.</p>
+                    <form class="mt-4" onsubmit="return validateNewsletter()">
+                        <input type="email" id="newsletter-email" placeholder="Seu email" class="w-full px-4 py-2 border rounded-lg" required>
+                        <button type="submit" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Assinar</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Direitos autorais -->
+            <div class="border-t border-gray-200 mt-8 pt-8 text-center text-gray-600">
+                &copy; 2025 Bear Skateshop. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+    <!---------------------------------------SCRIPTS--------------------------------------------------------------->
+    <!-- Incluindo o Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Inicializando o Swiper -->
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+    loop: true,
+    autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    effect: 'slide', // Efeito de transição
+    slidesPerView: 1, // Mostrar apenas 1 slide por vez
+    spaceBetween: 0, // Espaçamento entre slides
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
+        1024: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
+    },
+});    
+
+        // Script para alternar o menu em telas menores
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        // Script para dropdowns no menu mobile
+document.querySelectorAll('#mobile-menu .group').forEach((group) => {
+    const dropdown = group.querySelector('div');
+    group.addEventListener('click', () => {
+        dropdown.classList.toggle('hidden');
+    });
+});
+        function validateNewsletter() {
+        const email = document.getElementById('newsletter-email').value;
+        if (!email.includes('@')) {
+            alert('Por favor, insira um email válido.');
+            return false;
+        }
+        alert('Obrigado por assinar nossa newsletter!');
+        return true;
+    }
+
+    </script>
+</body>
+</html>
