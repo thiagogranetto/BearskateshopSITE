@@ -13,8 +13,8 @@
 </head>
 <body class="bg-amber-500">
     <!-- Header: Cabeçalho da página -->
-    <header class="bg-white shadow md:px-20">
-        <div class="container mx-auto px-2 py-0">
+    <header class="fixed top-0 left-0 w-full bg-white shadow-lg md:px-20 z-50 h-20">
+        <div class="container mx-auto px-3 py-0">
             <!-- Flex container para alinhar logo, menu e ícones -->
             <div class="flex items-center justify-between">
                 <!-- Logo da loja -->
@@ -22,34 +22,49 @@
                     <img src="./imagens/bearlogo.jpg" alt="Bear Skateshop" class="w-20">
                 </div>
                 <!-- Menu de navegação para telas maiores -->
-                <nav class="hidden md:flex space-x-10 font-sidger text-3xl text-end">
+                <nav class="hidden md:flex space-x-15 font-sidger text-4xl">
                     <!-- Item do menu com dropdown -->
                     <div class="group relative">
                         <!-- Link principal do menu -->
-                        <a href="#" class="text-black hover:text-gray-600">Skateboarding</a>
+                        <a href="#" class="text-black hover:text-gray-600 flex items-center whitespace-nowrap">Skate</a>
+                        <svg class="ml-4 w-3 h-3 transition-transform transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
                         <!-- Dropdown que aparece ao passar o mouse -->
-                        <div class="absolute hidden group-hover:block bg-gray-200 shadow-lg rounded-lg  py-2 w-25 z-50">
-                            <a href="#" class="block px-2 py-2 text-left text-black hover:bg-gray-100">Decks</a>
-                            <a href="#" class="block px-2 py-2 text-left text-black hover:bg-gray-100">Trucks</a>
-                            <a href="#" class="block px-2 py-2 text-left text-black hover:bg-gray-100">Wheels</a>
+                        <div class="absolute bg-gray-200 shadow-lg rounded-lg  py-2 w-25 z-50 
+                        opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out transform
+                        -translate-y-2 group-hover:translate-y-0">
+                            <a href="#" class="block px-2 py-2 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Decks</a>
+                            <a href="#" class="block px-2 py-2 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Trucks</a>
+                            <a href="#" class="block px-2 py-2 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Wheels</a>
                         </div>
                     </div>
                     <!-- Outro item do menu com dropdown -->
                     <div class="group relative">
-                        <a href="#" class="text-black hover:text-gray-600">Roupas</a>
-                        <div class="absolute hidden group-hover:block bg-gray-200  shadow-lg rounded-lg py-2 w-25 z-50">
-                            <a href="#" class="block px-2 py-2 text-left text-black hover:bg-gray-100">Camisetas</a>
-                            <a href="#" class="block px-2 py-2 text-left text-black hover:bg-gray-100">Casacos</a>
-                            <a href="#" class="block px-2 py-2 text-left text-black hover:bg-gray-100">Calcas</a>
+                        <a href="#" class="text-black hover:text-gray-600  flex items-center whitespace-nowrap">Roupas</a>
+                        <svg class="ml-5 w-3 h-3 transition-transform transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                        <div class="absolute bg-gray-200 shadow-lg rounded-lg  py-2 w-25 z-50 
+                        opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out transform
+                        -translate-y-2 group-hover:translate-y-0">
+                            <a href="#" class="block px-2 py-2 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Camisetas</a>
+                            <a href="#" class="block px-2 py-2 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Casacos</a>
+                            <a href="#" class="block px-2 py-2 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">CaLcas</a>
                         </div>
                     </div>
                     <!-- Mais um item do menu com dropdown -->
                     <div class="group relative">
-                        <a href="#" class="text-black hover:text-gray-600">Acessorios</a>
-                        <div class="absolute hidden group-hover:block bg-gray-200  shadow-lg rounded-lg py-2 w-30 z-50">
-                            <a href="#" class="block px-2 py-2 text-black text-left hover:bg-gray-100">Ferramentas</a>
-                            <a href="#" class="block px-2 py-2 text-black text-left hover:bg-gray-100">Moletons</a>
-                            <a href="#" class="block px-2 py-2 text-black text-left hover:bg-gray-100">Bones</a>
+                        <a href="#" class="text-black hover:text-gray-600 items-center whitespace-nowrap">Acessorios</a>
+                        <svg class="ml-10 w-3 h-3 transition-transform transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                        <div class="absolute bg-gray-200 shadow-lg rounded-lg  py-2 w-30 z-50 
+                        opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out transform
+                        -translate-y-2 group-hover:translate-y-0">
+                            <a href="#" class="block px-2 py-2 text-black text-left hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Ferramentas</a>
+                            <a href="#" class="block px-2 py-2 text-black text-left hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Moletons</a>
+                            <a href="#" class="block px-2 py-2 text-black text-left hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Bones</a>
                         </div>
                     </div>
                     <!-- Itens do menu sem dropdown -->
@@ -57,108 +72,150 @@
                     <a href="#" class="text-black hover:text-gray-600">Promocoes</a>
                 </nav>
                 <!-- Ícones de login e carrinho -->
-                <div class="flex items-center space-x-4">
-                    <a href="#" class="text-black hover:text-gray-600">Login</a>
-                    <a href="#" class="text-black hover:text-gray-600">Carrinho</a>
-                </div>
+                <div class="flex gap-6">
+                    <!-- Ícone de Mini Loja (Login) -->
+                    <button class="flex flex-col items-center gap-1 text-black hover:text-amber-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+                            <path d="M10 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM3.465 14.493a1.23 1.23 0 0 0 .41 1.412A9.957 9.957 0 0 0 10 18c2.31 0 4.438-.784 6.131-2.1.43-.333.604-.903.408-1.41a7.002 7.002 0 0 0-13.074.003Z" />
+                        </svg>                          
+                        <span class="text-sm">Login</span>
+                    </button>
+                    <!-- Ícone de Carrinho -->
+        <button class="flex flex-col items-center gap-1 text-black hover:text-amber-600">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+                <path d="M1 1.75A.75.75 0 0 1 1.75 1h1.628a1.75 1.75 0 0 1 1.734 1.51L5.18 3a65.25 65.25 0 0 1 13.36 1.412.75.75 0 0 1 .58.875 48.645 48.645 0 0 1-1.618 6.2.75.75 0 0 1-.712.513H6a2.503 2.503 0 0 0-2.292 1.5H17.25a.75.75 0 0 1 0 1.5H2.76a.75.75 0 0 1-.748-.807 4.002 4.002 0 0 1 2.716-3.486L3.626 2.716a.25.25 0 0 0-.248-.216H1.75A.75.75 0 0 1 1 1.75ZM6 17.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM15.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />
+            </svg>              
+            <span class="text-sm">Carrinho</span>
+        </button>
+    </div>
                 <!-- Botão do menu hambúrguer para telas menores -->
                 <button id="menu-toggle" class="md:hidden focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <svg id="menu-icon" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
                 </button>
             </div>
             <!-- Menu de navegação para telas menores -->
-            <nav id="mobile-menu" class="hidden md:hidden mt-4">
-                <div class="space-y-2">
+            <nav id="mobile-menu" class="md:hidden fixed top-0 left-0 w-full bg-white shadow-lg transform transition-all duration-300 ease-in-out -translate-y-full opacity-0 z-40">
+                <div class="font-sidger text-3xl px-2">
                     <!-- Item do menu com dropdown -->
                     <div class="group relative">
                         <!-- Link principal do menu -->
-                        <a href="#" class="block text-gray-800 hover:text-gray-600">Skateboards</a>
+                        <a href="#" class="block text-black hover:text-gray-600 border-t">Skate</a>
                         <!-- Dropdown que aparece ao passar o mouse -->
-                        <div class="hidden group-hover:block bg-white shadow-lg rounded-lg mt-2 py-2 w-48 z-50">
-                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Decks</a>
-                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Trucks</a>
-                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Wheels</a>
+                        <div class="absolute bg-gray-200 shadow-lg rounded-lg w-28 z-50 
+                        opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out transform
+                        -translate-y-2 group-hover:translate-y-0">
+                            <a href="#" class="block px-2 py-2 text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Decks</a>
+                            <a href="#" class="block px-2 py-2 text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Trucks</a>
+                            <a href="#" class="block px-2 py-2 text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Wheels</a>
                         </div>
                     </div>
                     <!-- Outro item do menu com dropdown -->
                     <div class="group relative">
-                        <a href="#" class="block text-gray-800 hover:text-gray-600">Roupas</a>
-                        <div class="hidden group-hover:block bg-white shadow-lg rounded-lg mt-2 py-2 w-48 z-50">
-                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Camisetas</a>
-                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Calças</a>
-                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Casacos</a>
+                        <a href="#" class="block text-black hover:text-gray-600 border-t">Roupas</a>
+                        <div class="absolute bg-gray-200 shadow-lg rounded-lg w-28 z-50 
+                        opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out transform
+                        -translate-y-2 group-hover:translate-y-0">
+                            <a href="#" class="block px-2 py-2 text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Camisetas</a>
+                            <a href="#" class="block px-2 py-2 text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Calcas</a>
+                            <a href="#" class="block px-2 py-2 text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Casacos</a>
                         </div>
                     </div>
                     <!-- Mais um item do menu com dropdown -->
                     <div class="group relative">
-                        <a href="#" class="block text-gray-800 hover:text-gray-600">Acessórios</a>
-                        <div class="hidden group-hover:block bg-white shadow-lg rounded-lg mt-2 py-2 w-48 z-50">
-                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Skate Tools</a>
-                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Moletons</a>
-                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Bonés</a>
+                        <a href="#" class="block text-black hover:text-gray-600 border-t">Acessorios</a>
+                        <div class="absolute bg-gray-200 shadow-lg rounded-lg w-28 z-50 
+                        opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out transform
+                        -translate-y-2 group-hover:translate-y-0">
+                            <a href="#" class="block px-2 py-2 text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Skate Tools</a>
+                            <a href="#" class="block px-2 py-2 text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Moletons</a>
+                            <a href="#" class="block px-2 py-2 text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Bones</a>
                         </div>
                     </div>
                     <!-- Itens do menu sem dropdown -->
-                    <a href="#" class="block text-gray-800 hover:text-gray-600">Marcas</a>
-                    <a href="#" class="block text-gray-800 hover:text-gray-600">Promoções</a>
+                    <a href="#" class="block text-black hover:text-gray-600 border-t">Marcas</a>
+                    <a href="#" class="block text-black hover:text-gray-600 border-t">Promocoes</a>
                 </div>
             </nav>
         </div>
     </header>
+    <!-- Seção de promos/Descontos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Animação */
+    @keyframes slide {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(0); }
+    }
+    .slide-in {
+        animation: slide 0.5s ease-out;
+    }
+    </style>
+</head>
+    <div class="container max-w-full">
+<!-- Seção de Promos e Descontos -->
+<div class="bg-black shadow-lg text-center">
+        <div id="promo-carousel" class=" text-white overflow-hidden">
+        <!-- Mensagens serão injetadas aqui via JavaScript -->
+        </div>
+    </div>
+    </div>
 <!-- Carrossel de Banners -->
-    <div class="swiper-container my-20 px-12">
+<div class="px-15">
+    <div class="swiper-container overflow-hidden h-140 mx-auto z-30">
         <div class="swiper-wrapper">
             <!-- Slide 1 -->
             <div class="swiper-slide">
-                <img src="./imagens/banner1.jpg" alt="Banner 1" class="w-full object-cover">
+                <img src="./imagens/banner1.jpg" alt="Banner 1" class="w-full h-full object-cover">
             </div>
             <!-- Slide 2 -->
             <div class="swiper-slide">
-                <img src="./imagens/banner2.jpg" alt="Banner 2" class="w-full object-cover">
+                <img src="./imagens/banner2.jpg" alt="Banner 2" class="w-full h-full object-cover">
             </div>
             <!-- Slide 3 -->
             <div class="swiper-slide">
-                <img src="./imagens/banner3.jpg" alt="Banner 3" class="w-full object-cover">
+                <img src="./imagens/banner3.jpg" alt="Banner 3" class="w-full h-full object-cover">
             </div>
         </div>
-        <!-- Botões de navegação -->
-        <div class="swiper-button-next object-center"></div>
-        <div class="swiper-button-prev object-center"></div>
         <!-- Paginação -->
         <div class="swiper-pagination object-bottom"></div>
     </div>
 
     <!-- Seção de Novidades -->
     <section class="container mx-auto px-6 py-8">
-        <h2 class="text-2xl font-bold text-gray-800 mb-6">Novidades</h2>
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+        <h2 class=" text-5xl text-black mb-4 my-10 font-sidger">Novidades</h2>
+        <div class="grid grid-cols-3 md:grid-cols-4 gap-6">
             <!-- Card de produto 1 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
-                <img src="./imagens/produto1.png" alt="Produto 1" class="w-70 h-48 object-center">
+            <div class="overflow-hidden shadow-lg transition-transform transform hover:scale-105">
+                <img src="./imagens/produto1.png" alt="Produto 1" class="aspect-square object-cover">
                 <div class="p-4">
-                    <h2 class="text-xl font-bold text-gray-800">Deck de Skate</h2>
+                    <h2 class="text-xl font-bold text-black">Deck de Skate</h2>
                     <p class="text-gray-600">R$ 200,00</p>
-                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Comprar</button>
                 </div>
             </div>
             <!-- Card de produto 2 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden  transition-transform transform hover:scale-105">
-                <img src="./imagens/produto2.png" alt="Produto 2" class="w-full h-48 object-cover">
+            <div class=" overflow-hidden shadow-lg transition-transform transform hover:scale-105">
+                <img src="./imagens/produto2.png" alt="Produto 2" class="aspect-square object-cover">
                 <div class="p-4">
-                    <h2 class="text-xl font-bold text-gray-800">Trucks</h2>
+                    <h2 class="text-xl font-bold text-black">Trucks</h2>
                     <p class="text-gray-600">R$ 150,00</p>
-                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Comprar</button>
                 </div>
             </div>
             <!-- Card de produto 3 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden  transition-transform transform hover:scale-105">
-                <img src="./imagens/produto3.png" alt="Produto 3" class="w-full h-48 object-cover">
+            <div class="overflow-hidden  transition-transform transform hover:scale-105">
+                <img src="./imagens/produto3.png" alt="Produto 3" class="aspect-square object-cover">
                 <div class="p-4">
-                    <h2 class="text-xl font-bold text-gray-800">Wheels</h2>
+                    <h2 class="text-xl font-bold text-black">Wheels</h2>
                     <p class="text-gray-600">R$ 100,00</p>
-                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Comprar</button>
+                </div>
+            </div>
+            <!-- Card de produto 4 -->
+            <div class="overflow-hidden  transition-transform transform hover:scale-105">
+                <img src="./imagens/produto3.png" alt="Produto 3" class="aspect-square object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold text-black">Wheels</h2>
+                    <p class="text-gray-600">R$ 100,00</p>
                 </div>
             </div>
         </div>
@@ -166,40 +223,46 @@
 
     <!-- Seção de Mais Vendidos -->
     <section class="container mx-auto px-6 py-8">
-        <h2 class="text-2xl font-bold text-gray-800 mb-6">Mais Vendidos</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <h2 class="text-2xl font-bold text-black mb-6">Mais Vendidos</h2>
+        <div class="grid grid-cols-3 md:grid-cols-4 gap-6">
             <!-- Card de produto 1 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden  transition-transform transform hover:scale-105">
-                <img src="./imagens/produto4.png" alt="Produto 1" class="w-full h-48 object-cover">
+            <div class= shadow-lg overflow-hidden  transition-transform transform hover:scale-105">
+                <img src="./imagens/st-new-2-01-2ceffralu8-ci5fdl0xze.webp" alt="Produto 1" class="aspect-square object-cover">
                 <div class="p-4">
-                    <h2 class="text-xl font-bold text-gray-800">Deck de Skate</h2>
+                    <h2 class="text-xl font-bold text-black">Deck de Skate</h2>
                     <p class="text-gray-600">R$ 200,00</p>
-                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Comprar</button>
                 </div>
             </div>
             <!-- Card de produto 2 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden  transition-transform transform hover:scale-105">
-                <img src="./imagens/produto 5.png" alt="Produto 2" class="w-full h-48 object-cover">
+            <div class="bg-white shadow-lg overflow-hidden  transition-transform transform hover:scale-105">
+                <img src="./imagens/shape_cisco_marfim_nosso_jogo_e_skate_verde_14279_1_e0d457fb75fa30249a80a9486af0fc7e.webp" alt="Produto 2" class="aspect-square object-cover">
                 <div class="p-4">
-                    <h2 class="text-xl font-bold text-gray-800">Trucks</h2>
+                    <h2 class="text-xl font-bold text-black">Trucks</h2>
                     <p class="text-gray-600">R$ 150,00</p>
-                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Comprar</button>
                 </div>
             </div>
             <!-- Card de produto 3 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden  transition-transform transform hover:scale-105">
-                <img src="./imagens/produto6.png" alt="Produto 3" class="w-full h-48 object-cover">
+            <div class=" overflow-hidden  transition-transform transform hover:scale-105">
+                <img src="./imagens/shape-santa-cruz-screaming-hand-powerlyte-preto-103833.webp" alt="Produto 3" class="aspect-square object-cover">
                 <div class="p-4">
-                    <h2 class="text-xl font-bold text-gray-800">Wheels</h2>
+                    <h2 class="text-xl font-bold text-black">Wheels</h2>
                     <p class="text-gray-600">R$ 100,00</p>
-                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Comprar</button>
+                </div>
+            </div>
+            <!-- Card de produto 4 -->
+            <div class="overflow-hidden  transition-transform transform hover:scale-105">
+                <img src="./imagens/61qj7SPMCsL.webp" alt="Produto 3" class="aspect-square object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold text-black">Wheels</h2>
+                    <p class="text-gray-600">R$ 100,00</p>
                 </div>
             </div>
         </div>
     </section>
+</div>     
 
     <!-- Footer: Rodapé da página -->
-    <footer class="bg-white shadow mt-8">
+    <footer class="bg-white shadow mt-8 h-full">
         <div class="container mx-auto px-6 py-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <!-- Sobre a loja -->
@@ -263,30 +326,38 @@
     },
     effect: 'slide', // Efeito de transição
     slidesPerView: 1, // Mostrar apenas 1 slide por vez
-    spaceBetween: 0, // Espaçamento entre slides
+    spaceBetween: 50, // Espaçamento entre slides
     breakpoints: {
         640: {
             slidesPerView: 1,
-            spaceBetween: 0,
+            spaceBetween: 50,
         },
         768: {
             slidesPerView: 1,
-            spaceBetween: 0,
+            spaceBetween: 50,
         },
         1024: {
             slidesPerView: 1,
-            spaceBetween: 0,
+            spaceBetween: 50,
         },
     },
-});    
+});
 
         // Script para alternar o menu em telas menores
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
 
-        menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+menuToggle.addEventListener('click', () => {
+    // Alternar a visibilidade do menu
+    mobileMenu.classList.toggle('-translate-y-full');
+    mobileMenu.classList.toggle('translate-y-10');
+    mobileMenu.classList.toggle('opacity-0');
+    mobileMenu.classList.toggle('opacity-100');
+
+    // Alternar a animação do ícone
+    menuIcon.classList.toggle('rotate-90');
+});
         // Script para dropdowns no menu mobile
 document.querySelectorAll('#mobile-menu .group').forEach((group) => {
     const dropdown = group.querySelector('div');
@@ -294,6 +365,7 @@ document.querySelectorAll('#mobile-menu .group').forEach((group) => {
         dropdown.classList.toggle('hidden');
     });
 });
+        // Script para validar o formulário da newsletter
         function validateNewsletter() {
         const email = document.getElementById('newsletter-email').value;
         if (!email.includes('@')) {
@@ -303,7 +375,35 @@ document.querySelectorAll('#mobile-menu .group').forEach((group) => {
         alert('Obrigado por assinar nossa newsletter!');
         return true;
     }
+// Array com as mensagens de promoções
+const promos = [
+    "Novo por aqui? Cadastre-se e ganhe 10% de desconto na primeira compra!",
+    "Pague via PIX e ganhe 4% de desconto!",
+    "Frete grátis para compras acima de R$300!",
+    ];
 
-    </script>
+    let currentIndex = 0;
+    const promoCarrusel = document.getElementById("promo-carousel");
+
+    function updatePromo() {
+      // Cria um novo elemento para a mensagem
+    const promoElement = document.createElement("div");
+    promoElement.textContent = promos[currentIndex];
+    promoElement.classList.add("slide-in"); // Adiciona a animação de slide
+
+      // Remove a mensagem anterior
+    promoCarrusel.innerHTML = "";
+    promoCarrusel.appendChild(promoElement);
+
+      // Avança para a próxima mensagem
+    currentIndex = (currentIndex + 1) % promos.length;
+    }
+
+    // Atualiza a cada 6 segundos
+    setInterval(updatePromo, 6000);
+
+    // Inicia com a primeira mensagem
+    updatePromo();
+</script>
 </body>
 </html>
