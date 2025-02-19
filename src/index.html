@@ -13,7 +13,7 @@
 </head>
 <body class="bg-amber-500">
     <!-- Header: Cabeçalho da página -->
-    <header class="fixed top-0 left-0 w-full bg-white shadow-lg md:px-20 z-50 h-20">
+    <header class="fixed w-full top-0 bg-white shadow md:px-20 z-50 h-20">
         <div class="container mx-auto px-3 py-0">
             <!-- Flex container para alinhar logo, menu e ícones -->
             <div class="flex items-center justify-between">
@@ -153,6 +153,7 @@
     }
     </style>
 </head>
+<div class="py-20">
     <div class="container max-w-full">
 <!-- Seção de Promos e Descontos -->
 <div class="bg-black shadow-lg text-center">
@@ -162,7 +163,6 @@
     </div>
     </div>
 <!-- Carrossel de Banners -->
-<div class="px-15">
     <div class="swiper-container overflow-hidden h-140 mx-auto z-30">
         <div class="swiper-wrapper">
             <!-- Slide 1 -->
@@ -187,7 +187,7 @@
         <h2 class=" text-5xl text-black mb-4 my-10 font-sidger">Novidades</h2>
         <div class="grid grid-cols-3 md:grid-cols-4 gap-6">
             <!-- Card de produto 1 -->
-            <div class="overflow-hidden shadow-lg transition-transform transform hover:scale-105">
+            <div class="overflow-hidden shadow-lg transition-transform transform hover:border">
                 <img src="./imagens/produto1.png" alt="Produto 1" class="aspect-square object-cover">
                 <div class="p-4">
                     <h2 class="text-xl font-bold text-black">Deck de Skate</h2>
@@ -226,7 +226,7 @@
         <h2 class="text-2xl font-bold text-black mb-6">Mais Vendidos</h2>
         <div class="grid grid-cols-3 md:grid-cols-4 gap-6">
             <!-- Card de produto 1 -->
-            <div class= shadow-lg overflow-hidden  transition-transform transform hover:scale-105">
+            <div class= "shadow-lg overflow-hidden transition-transform transform hover:border-1 hover:border-amber-900">
                 <img src="./imagens/st-new-2-01-2ceffralu8-ci5fdl0xze.webp" alt="Produto 1" class="aspect-square object-cover">
                 <div class="p-4">
                     <h2 class="text-xl font-bold text-black">Deck de Skate</h2>
@@ -304,6 +304,7 @@
                 &copy; 2025 Bear Skateshop. Todos os direitos reservados.
             </div>
         </div>
+    
     </footer>
     <!---------------------------------------SCRIPTS--------------------------------------------------------------->
     <!-- Incluindo o Swiper JS -->
