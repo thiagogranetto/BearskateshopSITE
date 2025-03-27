@@ -11,7 +11,7 @@
     <!-- Incluindo o Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
-<body class="bg-amber-500">
+<body class="bg-white">
     <!-- Header: Cabeçalho da página -->
     <header class="fixed w-full top-0 bg-white shadow md:px-20 z-50 h-20">
         <div class="container mx-auto px-3 py-0">
@@ -19,24 +19,31 @@
             <div class="flex items-center justify-between">
                 <!-- Logo da loja -->
                 <div>
-                    <img src="./imagens/bearlogo.jpg" alt="Bear Skateshop" class="w-20">
+                    <a href="index.html">
+                        <img src="./imagens/bearlogo.jpg" alt="Bear Skateshop" class="w-20">
+                    </a>
                 </div>
                 <!-- Menu de navegação para telas maiores -->
                 <nav class="hidden md:flex space-x-15 font-sidger text-4xl">
                     <!-- Item do menu com dropdown -->
                     <div class="group relative">
                         <!-- Link principal do menu -->
-                        <a href="#" class="text-black hover:text-gray-600 flex items-center whitespace-nowrap">Skate</a>
+                        <a href="./skate.html" class="text-black hover:text-gray-600 flex items-center whitespace-nowrap">Skate</a>
                         <svg class="ml-4 w-3 h-3 transition-transform transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                         <!-- Dropdown que aparece ao passar o mouse -->
-                        <div class="absolute bg-gray-200 shadow-lg rounded-lg  py-2 w-25 z-50 
+                        <div class="absolute bg-gray-200 shadow-lg rounded-lg py-2 w-72 z-50 
                         opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out transform
-                        -translate-y-2 group-hover:translate-y-0">
-                            <a href="#" class="block px-2 py-2 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Decks</a>
-                            <a href="#" class="block px-2 py-2 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Trucks</a>
-                            <a href="#" class="block px-2 py-2 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Wheels</a>
+                        -translate-y-2 group-hover:translate-y-0 grid grid-cols-2 font-mono text-xl">
+                            <a href="#shapes" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Shapes</a>
+                            <a href="#" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Trucks</a>
+                            <a href="#" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Rodinhas</a>
+                            <a href="#" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Lixas</a>
+                            <a href="#" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Rolamentos</a>
+                            <a href="#" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Acessórios</a>
+                            <a href="#" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Skate completo</a>
+                            <a href="#" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Proteção</a>
                         </div>
                     </div>
                     <!-- Outro item do menu com dropdown -->
@@ -45,12 +52,16 @@
                         <svg class="ml-5 w-3 h-3 transition-transform transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
-                        <div class="absolute bg-gray-200 shadow-lg rounded-lg  py-2 w-25 z-50 
+                        <div class="absolute bg-gray-200 shadow-lg rounded-lg py-2 w-60 z-50 
                         opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out transform
-                        -translate-y-2 group-hover:translate-y-0">
-                            <a href="#" class="block px-2 py-2 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Camisetas</a>
-                            <a href="#" class="block px-2 py-2 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Casacos</a>
-                            <a href="#" class="block px-2 py-2 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">CaLcas</a>
+                        -translate-y-2 group-hover:translate-y-0 grid grid-cols-2 font-mono text-xl">
+                            <a href="#" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Camisetas</a>
+                            <a href="#" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Camisas</a>
+                            <a href="#" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Jaquetas</a>
+                            <a href="#" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Moletons</a>
+                            <a href="#" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Calças</a>
+                            <a href="#" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Bermudas</a>
+
                         </div>
                     </div>
                     <!-- Mais um item do menu com dropdown -->
@@ -59,17 +70,22 @@
                         <svg class="ml-10 w-3 h-3 transition-transform transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
-                        <div class="absolute bg-gray-200 shadow-lg rounded-lg  py-2 w-30 z-50 
+                        <div class="absolute bg-gray-200 shadow-lg rounded-lg  py-2 w-60 z-50 
                         opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out transform
-                        -translate-y-2 group-hover:translate-y-0">
-                            <a href="#" class="block px-2 py-2 text-black text-left hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Ferramentas</a>
-                            <a href="#" class="block px-2 py-2 text-black text-left hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Moletons</a>
-                            <a href="#" class="block px-2 py-2 text-black text-left hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Bones</a>
+                        -translate-y-2 group-hover:translate-y-0 grid grid-cols-2 font-mono text-xl">
+                            <a href="#" class="block px-2 py-1 text-black text-left hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Cintos</a>
+                            <a href="#" class="block px-2 py-1 text-black text-left hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Bonés</a>
+                            <a href="#" class="block px-2 py-1 text-black text-left hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Toucas</a>
+                            <a href="#" class="block px-2 py-1 text-black text-left hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Meias</a>
+                            <a href="#" class="block px-2 py-1 text-black text-left hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Mochilas</a>
+                            <a href="#" class="block px-2 py-1 text-black text-left hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Bolsas</a>
+                            <a href="#" class="block px-2 py-1 text-black text-left hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Carteiras</a>
+                            <a href="#" class="block px-2 py-1 text-black text-left hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Óculos</a>
                         </div>
                     </div>
                     <!-- Itens do menu sem dropdown -->
                     <a href="#" class="text-black hover:text-gray-600">Marcas</a>
-                    <a href="#" class="text-black hover:text-gray-600">Promocoes</a>
+                    <a href="#" class="text-black hover:text-gray-600">Novidades</a>
                 </nav>
                 <!-- Ícones de login e carrinho -->
                 <div class="flex gap-6">
@@ -103,39 +119,52 @@
                         <!-- Link principal do menu -->
                         <a href="#" class="block text-black hover:text-gray-600 border-t">Skate</a>
                         <!-- Dropdown que aparece ao passar o mouse -->
-                        <div class="absolute bg-gray-200 shadow-lg rounded-lg w-28 z-50 
+                        <div class="absolute bg-gray-200 shadow-lg rounded-lg py-2 w-60 z-50 
                         opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out transform
-                        -translate-y-2 group-hover:translate-y-0">
-                            <a href="#" class="block px-2 py-2 text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Decks</a>
-                            <a href="#" class="block px-2 py-2 text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Trucks</a>
-                            <a href="#" class="block px-2 py-2 text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Wheels</a>
+                        -translate-y-2 group-hover:translate-y-0 grid grid-cols-2 font-mono text-xl">
+                        <a href="./shape.html" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Shapes</a>
+                        <a href="#" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Trucks</a>
+                        <a href="#" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Rodinhas</a>
+                        <a href="#" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Lixas</a>
+                        <a href="#" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Rolamentos</a>
+                        <a href="#" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Acessórios</a>
+                        <a href="#" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Skate completo</a>
+                        <a href="#" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Proteção</a>
                         </div>
                     </div>
                     <!-- Outro item do menu com dropdown -->
                     <div class="group relative">
                         <a href="#" class="block text-black hover:text-gray-600 border-t">Roupas</a>
-                        <div class="absolute bg-gray-200 shadow-lg rounded-lg w-28 z-50 
+                        <div class="absolute bg-gray-200 shadow-lg rounded-lg py-2 w-60 z-50 
                         opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out transform
-                        -translate-y-2 group-hover:translate-y-0">
-                            <a href="#" class="block px-2 py-2 text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Camisetas</a>
-                            <a href="#" class="block px-2 py-2 text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Calcas</a>
-                            <a href="#" class="block px-2 py-2 text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Casacos</a>
+                        -translate-y-2 group-hover:translate-y-0 grid grid-cols-2 font-mono text-xl">
+                        <a href="#" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Camisetas</a>
+                        <a href="#" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Camisas</a>
+                        <a href="#" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Jaquetas</a>
+                        <a href="#" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Moletons</a>
+                        <a href="#" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Calças</a>
+                        <a href="#" class="block px-2 py-1 text-left text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Bermudas</a>
                         </div>
                     </div>
                     <!-- Mais um item do menu com dropdown -->
                     <div class="group relative">
                         <a href="#" class="block text-black hover:text-gray-600 border-t">Acessorios</a>
-                        <div class="absolute bg-gray-200 shadow-lg rounded-lg w-28 z-50 
+                        <div class="absolute bg-gray-200 shadow-lg rounded-lg py-2 w-75 z-50 
                         opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out transform
-                        -translate-y-2 group-hover:translate-y-0">
-                            <a href="#" class="block px-2 py-2 text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Skate Tools</a>
-                            <a href="#" class="block px-2 py-2 text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Moletons</a>
-                            <a href="#" class="block px-2 py-2 text-black hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Bones</a>
+                        -translate-y-2 group-hover:translate-y-0 grid grid-cols-2 font-mono text-xl">
+                        <a href="#" class="block px-2 py-1 text-black text-left hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Cintos</a>
+                        <a href="#" class="block px-2 py-1 text-black text-left hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Bonés</a>
+                        <a href="#" class="block px-2 py-1 text-black text-left hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Toucas</a>
+                        <a href="#" class="block px-2 py-1 text-black text-left hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Meias</a>
+                        <a href="#" class="block px-2 py-1 text-black text-left hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Mochilas</a>
+                        <a href="#" class="block px-2 py-1 text-black text-left hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Bolsas</a>
+                        <a href="#" class="block px-2 py-1 text-black text-left hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Carteiras</a>
+                        <a href="#" class="block px-2 py-1 text-black text-left hover:bg-gray-100 hover:border-l-2 hover:border-amber-500">Óculos</a>
                         </div>
                     </div>
                     <!-- Itens do menu sem dropdown -->
                     <a href="#" class="block text-black hover:text-gray-600 border-t">Marcas</a>
-                    <a href="#" class="block text-black hover:text-gray-600 border-t">Promocoes</a>
+                    <a href="#" class="block text-black hover:text-gray-600 border-t">Novidades</a>
                 </div>
             </nav>
         </div>
@@ -187,7 +216,7 @@
         <h2 class=" text-5xl text-black mb-4 my-10 font-sidger">Novidades</h2>
         <div class="grid grid-cols-3 md:grid-cols-4 gap-6">
             <!-- Card de produto 1 -->
-            <div class="overflow-hidden shadow-lg transition-transform transform hover:border">
+            <div class="overflow-hidden shadow-lg transition-transform transform hover:scale-105">
                 <img src="./imagens/produto1.png" alt="Produto 1" class="aspect-square object-cover">
                 <div class="p-4">
                     <h2 class="text-xl font-bold text-black">Deck de Skate</h2>
@@ -226,7 +255,7 @@
         <h2 class="text-2xl font-bold text-black mb-6">Mais Vendidos</h2>
         <div class="grid grid-cols-3 md:grid-cols-4 gap-6">
             <!-- Card de produto 1 -->
-            <div class= "shadow-lg overflow-hidden transition-transform transform hover:border-1 hover:border-amber-900">
+            <div class= "shadow-lg overflow-hidden transition-transform transform hover:border-2 hover:border-amber-900">
                 <img src="./imagens/st-new-2-01-2ceffralu8-ci5fdl0xze.webp" alt="Produto 1" class="aspect-square object-cover">
                 <div class="p-4">
                     <h2 class="text-xl font-bold text-black">Deck de Skate</h2>
